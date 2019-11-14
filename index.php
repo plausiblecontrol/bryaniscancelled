@@ -34,8 +34,10 @@ if(!$origPrangeId || !$origHairId) {
     </style>
         <img class=prange src=\"$prange\">
         <img class=prange src=\"$haircut\">
-        <form action=\"index.php\">
-            <input type=\"submit\" value=\"Random Do\">
-        </form>";
+        <center>
+            <form action=\"index.php\">
+                <input type=\"submit\" value=\"Random Do\">
+            </form>
+        </center>";
 };
 ?>
