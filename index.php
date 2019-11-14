@@ -25,9 +25,6 @@ echo "
         height:400px;
       }
 </style>
-";
-
-echo "
     <img class=prange src=\"$prange\">
     <img class=prange src=\"$haircut\">";
 
