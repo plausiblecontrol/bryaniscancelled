@@ -1,11 +1,18 @@
 <?php
 
 function do_redir($origPrangeId, $origHairId) {
-    if(!$origPrangeId) {
+    $url = get_redir_url($origPrangeId, $origHairId);
+    header('Location:'. $url);
+    die();
+};
+
+function get_redir_url($origPrangeId, $origHairId) {
+    if(NULL === $origPrangeId) {
         $origPrangeId = get_prange_id();
     }
-    if(!$origHairId) {
+    if(NULL === $origHairId) {
         $origHairId = get_haircut_id();
     }
-    header("Location: " . "http://" . $_SERVER['HTTP_HOST'] . "/index.php?prange_id=$origPrangeId&hair_id=$origHairId");
+
+    return "http://" . $_SERVER['HTTP_HOST'] . "/index.php?prange_id=$origPrangeId&hair_id=$origHairId";
 };

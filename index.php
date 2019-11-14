@@ -5,6 +5,7 @@ include 'prange.php';
 
 $origPrangeId = $_GET['prange_id'] ?? NULL;
 $origHairId = $_GET['hair_id'] ?? NULL;
+
 if(NULL === $origPrangeId || NULL === $origHairId) {
     do_redir($origPrangeId, $origHairId);
 } else {
@@ -20,7 +21,7 @@ if(NULL === $origPrangeId || NULL === $origHairId) {
             height: 800;
             margin: 0;
             position: absolute;
-            top: 50%;
+            top: 55%;
             left: 50%;
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -41,12 +42,23 @@ if(NULL === $origPrangeId || NULL === $origHairId) {
     </style>
 
     <center><h1> BRYAN IS CANCELLED </h1></center>
-    <img class=prange src=\"$prange\">
-    <img class=prange src=\"$haircut\">
     <center>
         <form action=\"index.php\">
-            <input type=\"submit\" value=\"Get a Random Do\">
+            <input type=\"submit\" value=\"Random combo please!\">
         </form>
+        <form action=\"index.php\">
+            <input type=\"hidden\" id=\"hair_id\" name=\"hair_id\" value=\"$origHairId\">
+            <input type=\"submit\" value=\"New face please!\">
+        </form>
+        <form action=\"index.php\">
+            <input type=\"hidden\" id=\"prange_id\" name=\"prange_id\" value=\"$origPrangeId\">
+            <input type=\"submit\" value=\"New hair please!\">
+        </form>
+        <div>
+            <img class=prange src=\"$prange\">
+            <img class=prange src=\"$haircut\">
+        </div>
     </center>";
 }
+
 ?>
