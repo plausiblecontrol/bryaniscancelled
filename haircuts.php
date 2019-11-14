@@ -25,7 +25,7 @@ $haircuts = [
 
 function get_haircut_id($excludeId = NULL) {
     global $haircuts;
-    $randId = array_rand($pranges, 1);
+    $randId = array_rand($haircuts, 1);
     while($randId == $excludeId) {
         $randId = array_rand($haircuts, 1);
     }
