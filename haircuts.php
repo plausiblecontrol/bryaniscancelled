@@ -18,6 +18,10 @@ function get_haircut() {
         'https://cdn140.picsart.com/283701075009211.png?r1024x1024',
         'https://i.dlpng.com/static/png/462176_preview.png',
         'https://i0.wp.com/freepngimages.com/wp-content/uploads/2015/11/long-brown-curly-hair-transparent-backgroundpng.png?w=765',
+        'http://www.trumpshair.com/images/hairs/hair_1.png',
+        'https://i.redd.it/pycc3dli9jsx.png',
+        'https://clipartsworld.com/images/girl-with-pigtails-clipart-45.png',
+        'https://cdn130.picsart.com/294449133015211.png?r240x240'
     ];
 
     $randIndex = array_rand($haircuts, 1);
