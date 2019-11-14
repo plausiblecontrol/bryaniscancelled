@@ -10,8 +10,8 @@ echo "
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 400;
-        height: 400;
+        width: 800;
+        height: 800;
         margin: 0;
         position: absolute;
         top: 50%;
@@ -21,13 +21,12 @@ echo "
     }
 
     img.resize {
-        width:400;
-        height:400px;
+        width:800;
+        height:800;
       }
 </style>
     <img class=prange src=\"$prange\">
     <img class=prange src=\"$haircut\">";
-
 ?>
 
 refresh for another sick do
