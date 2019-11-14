@@ -5,12 +5,11 @@ include 'prange.php';
 
 $origPrangeId = $_GET['prange_id'] ?? NULL;
 $origHairId = $_GET['hair_id'] ?? NULL;
-if(!$origPrangeId || !$origHairId) {
+if(NULL === $origPrangeId || NULL === $origHairId) {
     do_redir($origPrangeId, $origHairId);
 } else {
     $prange = get_prange($origPrangeId);
     $haircut = get_haircut($origHairId);
-    
     echo "
     <style>
         .prange {
@@ -26,18 +25,28 @@ if(!$origPrangeId || !$origHairId) {
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
-    
+
         img.resize {
             width:800;
             height:800;
-          }
+        }
+
+        body {
+            background: black;
+        }
+
+        h1, h2, h3 {
+            color: white;
+        }
     </style>
-        <img class=prange src=\"$prange\">
-        <img class=prange src=\"$haircut\">
-        <center>
-            <form action=\"index.php\">
-                <input type=\"submit\" value=\"Random Do\">
-            </form>
-        </center>";
-};
+
+    <center><h1> BRYAN IS CANCELLED </h1></center>
+    <img class=prange src=\"$prange\">
+    <img class=prange src=\"$haircut\">
+    <center>
+        <form action=\"index.php\">
+            <input type=\"submit\" value=\"Get a Random Do\">
+        </form>
+    </center>";
+}
 ?>
