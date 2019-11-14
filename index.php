@@ -1,2 +1,7 @@
-<?php echo date("Y/m/d")."<br>";?>
+<?php 
+include 'haircuts.php';
+$haircut = get_haircut();
+echo "<img src=\"$haircut\" width=300><br>";
+
+?>
 bryan is testing
