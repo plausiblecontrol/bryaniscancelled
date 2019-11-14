@@ -4,4 +4,4 @@ $haircut = get_haircut();
 echo "<img src=\"$haircut\" width=300><br>";
 
 ?>
-bryan is testing
+refresh for another sick do
