@@ -24,9 +24,18 @@ echo "
         width:800;
         height:800;
       }
-</style>
-    <img class=prange src=\"$prange\">
-    <img class=prange src=\"$haircut\">";
-?>
 
-refresh for another sick do
+      body {
+          background: black;
+      }
+
+      h1, h2, h3 {
+          color: white;
+      }
+</style>
+
+      <center><h1> BRYAN IS CANCELLED </h1></center>
+    <img class=prange src=\"$prange\">
+    <img class=prange src=\"$haircut\">
+    <center><h3> REFRESH FOR A NEW SICK DO</h3></center>";
+?>
