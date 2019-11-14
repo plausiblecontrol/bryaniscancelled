@@ -12,7 +12,7 @@ if(NULL === $origPrangeId || NULL === $origHairId) {
     $prange = get_prange($origPrangeId);
     $haircut = get_haircut($origHairId);
     $newPrangeId = get_prange_id($origPrangeId);
-    $newHaircutId = get_prange_id($origHairId);
+    $newHaircutId = get_haircut_id($origHairId);
     echo "
     <style>
         .prange {
