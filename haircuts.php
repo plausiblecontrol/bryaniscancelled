@@ -16,7 +16,8 @@ function get_haircut() {
         'https://i.imgur.com/66PgbWm.png',
         'https://i.imgur.com/s8XuS2C.png',
         'https://cdn140.picsart.com/283701075009211.png?r1024x1024',
-        'https://i.dlpng.com/static/png/462176_preview.png'
+        'https://i.dlpng.com/static/png/462176_preview.png',
+        'https://i0.wp.com/freepngimages.com/wp-content/uploads/2015/11/long-brown-curly-hair-transparent-backgroundpng.png?w=765',
     ];
 
     $randIndex = array_rand($haircuts, 1);
