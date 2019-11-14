@@ -8,9 +8,13 @@ $pranges = [
     'https://i.imgur.com/bVvLemm.jpg'
 ];
 
-function get_prange_id() {
+function get_prange_id($excludeId = NULL) {
     global $pranges;
-    return array_rand($pranges, 1);
+    $randId = array_rand($pranges, 1);
+    while($randId == $excludeId) {
+        $randId = array_rand($pranges, 1);
+    }
+    return $randId;
 }
 
 function get_prange($prangeId) {

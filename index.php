@@ -11,6 +11,8 @@ if(NULL === $origPrangeId || NULL === $origHairId) {
 } else {
     $prange = get_prange($origPrangeId);
     $haircut = get_haircut($origHairId);
+    $newPrangeId = get_prange_id($origPrangeId);
+    $newHaircutId = get_prange_id($origHairId);
     echo "
     <style>
         .prange {
@@ -48,10 +50,12 @@ if(NULL === $origPrangeId || NULL === $origHairId) {
         </form>
         <form action=\"index.php\">
             <input type=\"hidden\" id=\"hair_id\" name=\"hair_id\" value=\"$origHairId\">
+            <input type=\"hidden\" id=\"prange_id\" name=\"prange_id\" value=\"$newPrangeId\">
             <input type=\"submit\" value=\"New face please!\">
         </form>
         <form action=\"index.php\">
             <input type=\"hidden\" id=\"prange_id\" name=\"prange_id\" value=\"$origPrangeId\">
+            <input type=\"hidden\" id=\"hair_id\" name=\"hair_id\" value=\"$newHaircutId\">
             <input type=\"submit\" value=\"New hair please!\">
         </form>
         <div>

@@ -23,9 +23,13 @@ $haircuts = [
     'https://cdn130.picsart.com/294449133015211.png?r240x240'
 ];
 
-function get_haircut_id() {
+function get_haircut_id($excludeId = NULL) {
     global $haircuts;
-    return array_rand($haircuts, 1);
+    $randId = array_rand($pranges, 1);
+    while($randId == $excludeId) {
+        $randId = array_rand($haircuts, 1);
+    }
+    return $randId;
 }
 
 function get_haircut($haircutId) {
