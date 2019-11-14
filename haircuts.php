@@ -14,7 +14,9 @@ function get_haircut() {
         'https://i.imgur.com/12ijgRi.png',
         'https://i.imgur.com/5bbWHUC.png',
         'https://i.imgur.com/66PgbWm.png',
-        'https://i.imgur.com/s8XuS2C.png'
+        'https://i.imgur.com/s8XuS2C.png',
+        'https://cdn140.picsart.com/283701075009211.png?r1024x1024',
+        'https://i.dlpng.com/static/png/462176_preview.png'
     ];
 
     $randIndex = array_rand($haircuts, 1);
